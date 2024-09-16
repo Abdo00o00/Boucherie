@@ -1,0 +1,550 @@
+/* ----------------------------------------------------start main class */
+/* fonts */
+@font-face {
+    font-family: "Marcellus";
+    src: url('../assets/fonts/Marcellus/Marcellus-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url('../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ****** */
+*:focus,
+section *:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+*:not(svg){
+    align-items: center;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+body ,section{
+    background-color: #F0EDEA;
+    font-family: "Montserrat", sans-serif;
+    line-height: 18px;
+    font-weight: 400 ;
+}
+
+
+/* other class */
+
+
+.hover-text{
+    transition: all 0.3s ease-in-out !important;
+}
+.hover-text:hover{
+    color: #CF4D2D !important;
+    cursor: pointer;
+}
+.mb-35 {
+    margin-bottom: 35px;
+}
+.mb-80 {
+    margin-bottom: 80px;
+}
+.mt-100 {
+    margin-top: 150px;
+}
+.pb-35 {
+    padding-bottom: 35px;
+}
+.pt-35 {
+    padding-top: 35px;
+}
+.pt-70 {
+    padding-top: 70px;
+}
+.section-padding {
+    padding: 90px 20px;
+}
+.padding {
+    padding: 150px 0px 0px ;
+
+}
+.center-line-div {
+    margin-top: 4rem;
+    height:179px;
+    width: 1.3px;
+}
+.bottom-line-div {
+    margin-top: 10rem;
+    width:60px;
+    height: 1.3px;
+}
+/* -------start underline animations */
+/* ------------- that works but it is stu
+.content {
+    justify-content: center;
+    list-style: none;
+}
+.content__item {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.link {
+    cursor: pointer;
+    position: relative;
+}
+.link::before,
+.link::after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+.link::before {
+    content: '';
+}
+.link--metis::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+.link--metis:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+}
+.link--metis:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+}
+
+/* ------------- that works*/
+.textline:hover {
+    background-size: 100% 1px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.textline {
+    position: relative;
+    display: inline;
+    background-image: linear-gradient(currentColor,currentColor );
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .5s;
+}
+.bgDiv {
+    z-index: -2;
+    background-image: url(../assets/images/asset\ 8.webp) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 100%;
+    /* height: 100%; */
+    top: 0;
+    left: 0;
+}
+.sec-img-padding {
+    padding-top:100px;
+    padding-bottom:100px;
+}
+.sec-img-padding15 {
+    padding-top:150px;
+    padding-bottom:150px;
+}
+.sec-img-margin {
+    margin-top:100px;
+    margin-bottom:100px;
+}
+.outbtn:hover{
+    background-color: #CF4D2D;
+}
+.outbtn{
+    background-color: #CF4D2D;
+    padding: 9px 24px ;
+    border-radius: 23px 23px 23px 23px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+}
+/* ------------- */
+/* -------end underline animations */
+/* - */
+
+/* ----------------------------------------------------end main class */
+/* -- */
+/* -- */
+/* ----------------------------------------------------start navbar  */
+
+header {
+    font-weight: 600;
+    font-size: 14px ;
+    line-height: 18px ;
+    color: #111010 ;
+    z-index: 3;
+    background-color: #F0EDEA !important;
+    transition: all 0.5s ease-in-out;
+}
+header .nav-link {
+    color: #000 !important;
+}
+header .nav-item p{
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #111010;
+    transition: all 0.15s ease-in-out imo !important;
+}
+.nav-item {
+    margin: 0 0.7rem;
+}
+.nav-item:hover ul {
+    display: block;
+    opacity: 1;
+    animation: showNavUl 0.5s  ;
+}
+header .nav-item a {
+    font-weight: 600;
+    font-size: 14px ;
+    line-height: 18px ;
+    color: #111010 ;
+}
+header .nav-item li {
+    text-wrap: nowrap;
+    cursor: pointer;
+}
+header .nav-item ul{
+    display: none;
+    border-top: #CF4D2D 1px solid;
+    opacity: 0 ;
+    width: 130px;
+    top: 20px;
+    left: 0px;
+    position: absolute;
+    background-color: #FFFFFF;
+    z-index: 2 !important;
+
+}
+
+header .rigth-nav span {
+    transition: all 0.2s ease-in-out;
+} 
+header .rigth-nav span:hover {
+    color: #CF4D2D;
+}
+nav {
+    padding: 27.5px 30px !important;
+    margin: 0 !important;
+
+}
+header .row>* {
+    flex-shrink: unset !important;
+}
+/* ----------------------------------------------------end navbar*/
+/* -- */
+/* -- */
+/*----------------------------------------------------start section 1 photo and h1*/
+
+#home svg {
+    color: #CF4D2D;
+}
+
+#home h4{
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 22px;
+   color: rgb(17, 16, 16);
+}
+
+#home h1 , #home .h1 {
+    font-weight: 400;
+    font-size: 66px;
+    line-height: 73px;
+    color: rgb(17, 16, 16);
+    font-family: "Marcellus", sans-serif;
+}
+/* ----------------------------------------------------end section 1 photo and h1 */
+/* -- */
+/* -- */
+/* ----------------------------------------------------start section 2 picture and words and line */
+#skills h5 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: rgb(93, 93, 93);
+}
+#skills span {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+}
+#skills h2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: rgb(17, 16, 16);
+    font-family: "Marcellus", sans-serif;
+}
+/* ----------------------------------------------------end section 2 picture and words and line */
+/* -- */
+/* -- */
+/* ----------------------------------------------------start section 3 Quality Services // 3 divs */
+#Quality-Services .the-center h6 { 
+    color: rgb(93, 93, 93);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+} 
+#Quality-Services .the-center svg { 
+    opacity: 0;
+    transition: all 0s ease-in-out;
+}
+
+#Quality-Services .the-center p:hover svg {
+    opacity: 1;
+}
+#Quality-Services .spans div {
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 100px;
+    color: #111010;
+    margin-bottom: 0.8rem ;
+    font-family: "Marcellus" , sans-serif;
+}
+#Quality-Services .the-center .spans{
+    padding-top: 4rem;
+}
+#Quality-Services .left-img{
+    margin-top: 4rem;
+}
+#Quality-Services .right-img{
+    margin-top: 9rem;
+}
+#Quality-Services .the-center-bottom span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #111010;
+}
+#Quality-Services .the-center-bottom svg {
+
+    opacity: 1;
+} 
+#Quality-Services .the-center-bottom p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: rgb(93, 93, 93);
+    margin-top: 1.5rem;
+}
+#Quality-Services .the-center-bottom h3 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: "Marcellus", sans-serif;
+    color: rgb(17, 16, 16);
+    margin-top: 1.5rem;
+}
+#Quality-Services .the-center .home-img {
+    margin-top: 1.5rem;
+    border-top-left-radius: 45% ;
+    border-top-right-radius:45% ;
+}
+/* ----------------------------------------------------end section 3 Quality Services // 3 divs */
+/* -- */
+/* -- */
+/* ----------------------------------------------------start section 4 carousel //some photos */
+#carouselSec p {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: rgb(93, 93, 93);
+}
+#carouselSec .Acard span {
+    font-family: "Marcellus" , sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+
+}
+#carouselSec .Acard p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    
+}
+#carouselSec .Acard .imgHome::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all 1s ease;
+}
+#carouselSec .Acard img{
+    transition: all 1s ease;
+}
+#carouselSec .ch-Acard:hover span.hover-text{
+    color: #CF4D2D;
+}
+#carouselSec .ch-Acard:hover .imgHome::after{
+    opacity: 1;
+}
+#carouselSec .ch-Acard:hover img{
+    transform: scale(1.15);
+}
+#carouselSec .Acard .imgHome.inCenter{
+    border-top-left-radius: 50% 40% ;
+    border-top-right-radius:50% 40% ;
+}
+/* ----------------------------------------------------end section 4 carousel //some photos */
+/* -- */
+/* -- */
+/* --------------------------------------------------------start section 5 // timeline // 2divs */
+#Timeline p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #111010;
+    font-weight: 600;
+}
+#Timeline span {
+    font-size: 24px;
+    line-height: 29px;
+    color: rgb(17, 16, 16);
+    font-weight: 400;
+    font-family: "Marcellus" , sans-serif;
+}
+#Timeline span.h1 {
+    font-size: 58px;
+    line-height: 70px;
+    color: rgb(17, 16, 16);
+    font-weight: 400;
+    font-family: "Marcellus" , sans-serif;
+}
+#Timeline {
+    background-color: #E5E6D4;
+
+}
+
+/* --------------------------------------------------------end section 5 // timeline // 2divs */
+/* -- */
+/* -- */
+/* --------------------------------------------------------start section 6 // feedback // just a comment */
+#Feedback button {
+    padding:14px 35px;
+    background-color: #CF4D2D;
+}
+#Feedback img {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#Feedback span {
+    font-size: 14px;
+    font-weight:600 ;
+    color:#111010;
+}
+#Feedback p {
+    line-height: 22px;
+    color: rgb(93, 93, 93);
+}
+
+#Feedback .inLast-footer svg{ 
+    transition: all 0.2s ease;
+    color: #111010;
+}
+#Feedback .inLast-footer a:hover svg{
+    color: #CF4D2D;
+    transform: scale(0.93);    
+}
+#Feedback .inLast p {
+    font-size: 14px;
+    line-height: 14px;
+}
+#Feedback .inLast .center-line-div {
+    height: 300px;
+}
+#Feedback .inLast-footer p {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(17, 16, 16);
+}
+#Feedback .inLast-footer .center-line-div {
+    height: 100px;
+}
+/* --------------------------------------------------------end section 6 // feedback // just a comment */
+/* -- */
+/* -- */
+/* --------------------------------------------------------start footer */
+footer{
+    background-color: #F0EDEA;
+}
+footer span {
+    font-size: 12px;
+    line-height: 22px;
+    
+}
+/* --------------------------------------------------------end footer */
+/* -- */
+/* -- */
+/* --------start animatoins */
+/* - */
+/* --------start navbar button animations */
+@keyframes showNavUl {
+    0% {
+        display: block;
+        opacity: 0;
+    }
+
+
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* --------end navbar button animations */
+/* - */
+/* --------end animatoins */
+/* -- */
+/* -- */
+/* ----------------------------------------------------start reponsive for all */
+
+@media screen and (max-width: 1199) {
+
+}
+
+@media screen and (max-width: 1040px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 570px) {
+
+
+}
+
+/* ----------------------------------------------------end reponsive for all */
+/* -- */
+/* -- */
+/* -- */
+/*                                                              "the end sweety"
+*/
