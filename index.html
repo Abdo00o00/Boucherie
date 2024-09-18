@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+
     <!-- start top navbar ------------------------------------------------------------------not done-->
     <header class="w-100 position-fixed top-0 start-0 end-0">
       <nav class="navbar container-fluid navbar-expand-lg ">
-          <div class="row flex-nowrap col-12 align-items-center justify-content-between" >
+          <div class="row flex-nowrap col-12 align-items-start justify-content-between" >
             
-            <div class="brandd-home col-2">
+            <div class="brandd-home col-3 col-lg-2">
               <a class="navbar-brandd " href="#"><img src="./assets/images/asset 0.svg" alt="Logo" class="img-fluid p-0 m-0"></a>
             </div>
 
@@ -72,31 +74,64 @@
             </div>
 
             <div class="w-auto row flex-nowrap align-items-center rigth-nav hover-text">
-              <span class="text-nowrap textline px-0 me-3">Order <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-right" viewBox="0 0 16 16">
+              <span class="headerSpan text-nowrap textline px-0 me-3">Order <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-right" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0z"/>
                 </svg>
               </span>
-              <button class="btn text-white me-0 border-0 outbtn"><a href="#" class="textline text-decoration-none text-white">Reservation</a></button>
+              <button class="btn text-white me-0 me-lg-0 border-0 outbtn"><a href="#" class="textline text-decoration-none text-white">Reservation</a></button>
+              <button class="navbar-toggler text-end col-2 border-0 p-0 m-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" 
+                      aria-controls="navbarTogglerDemo03    " aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon p-0 m-0 "></span>
+              </button>
             </div>
             
 
-            <button class="navbar-toggler text-end col-2 me-0 border-0 p-0 m-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" 
-                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon p-0 m-0"></span>
-            </button>
           </div>
         </nav>
+        <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav> -->
     </header>
     <!-- end top navbar -->
+
+
     <main>
 
+
       <!-- start fixed div for bg image -->
-      <div class="bgDiv position-fixed top-0 bottom-0 start-0 end-0 "></div>
+      <div class="bgDiv d-n-resizing position-fixed top-0 bottom-0 start-0 end-0 d-none d-lg-block"></div>
       <!-- end fixed div for bg image -->
+
 
       <!-- start section 1 photo and h1  -->
       <section id="home" class=" overflow-hidden mb-30 section-padding">
-          <div class="container-xl">
+          <div class="container-lg">
             <div class="row">
               <div class="col-12 mx-auto  ">
                 <div class="col-12  text-center">
@@ -105,10 +140,10 @@
                       <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
                     </svg>
                     <h4>Since 1994</h4>
-                    <h1 class="col-7 mx-auto text-center mt-4">Serving Coffee, Breakfast, and Lunch</h1>
+                    <h1 class="col-lg-7 col-8 mx-auto text-center mt-4">Serving Coffee,<br> Breakfast, and Lunch</h1>
                   </div>
                 </div>
-                <div class=" mx-auto col-8 px-4 mt-3">
+                <div class=" mx-auto col-lg-8 col-md-10 col-12 px-lg-4 px-0 mt-3">
                   <div class="home-img  justify-content-center pe-lg-4 h-auto align-items-center mx-auto overflow-hidden">
                     <img src="./assets/images/asset 7.webp" alt="girl" class="img-fluid">
                   </div>
@@ -123,10 +158,10 @@
       
 
       <!-- start section 2 picture and words and line-->
-      <section id="skills" class="py-2 px-5">
+      <section id="skills" class="py-2 px-5 position-relative">
         <div class="container mx-auto">
           <div class="row justify-content-center align-items-start ">
-            <div class="col-2 me-auto mb-auto mt-5">
+            <div class="col-2 me-auto mb-auto">
               <div class="homeImgR"><img src="./assets/images/asset 1.svg" alt="..." class="img-fluid"></div>
             </div>
             <div class=" col-7 text-center padding ">
@@ -136,10 +171,10 @@
                   <path fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0z"/>
                 </svg>
              </span>
-             <div class="position-relative">
-              <div class="bg-black center-line-div mx-auto"></div>
+            <div class="overflow-hidden">
+              <div class=" center-line-div mx-auto"><div class="child-center-line-div"></div></div>
               <div class="bg-black bottom-line-div mx-auto z-3"></div>
-             </div>
+            </div>
             
             </div>
             <div class="col-2 ms-auto mt-auto">
@@ -163,39 +198,39 @@
                 <h6 class="mb-35 mx-auto mt-2 ps-3">We’ll serving you</h6>
 
                 <div class="spans">
-                  <div>
-                    <p class="hover-text textline ">Lunch<svg xmlns="http://www.w3.org/2000/svg" width="55" fill="currentColor" class="bi bi-arrow-down-right" viewBox="0 0 16 16">
+                  <div class="mb-0">
+                    <p class="hover-text textline text-nowrap ">Lunch<svg xmlns="http://www.w3.org/2000/svg" width="55" fill="currentColor" class="bi bi-arrow-down-right" viewBox="0 0 16 16">
                       <path fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0z"/>
                       </svg>
                     </p>
                   </div>
-                  <div>
-                    <p class="hover-text textline">Breakfast<svg xmlns="http://www.w3.org/2000/svg" width="55" fill="currentColor" class="bi bi-arrow-down-right" viewBox="0 0 16 16">
+                  <div class="mb-0">
+                    <p class="hover-text textline text-nowrap ">Breakfast<svg xmlns="http://www.w3.org/2000/svg" width="55" fill="currentColor" class="bi bi-arrow-down-right" viewBox="0 0 16 16">
                       <path fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0z"/>
                     </svg>
                   </p>
                   </div>
-                  <div>
-                    <p class="hover-text textline">Beverages<svg xmlns="http://www.w3.org/2000/svg" width="55" fill="currentColor" class="bi bi-arrow-down-right" viewBox="0 0 16 16">
+                  <div class="mb-0">
+                    <p class="hover-text textline text-nowrap ">Beverages<svg xmlns="http://www.w3.org/2000/svg" width="55" fill="currentColor" class="bi bi-arrow-down-right" viewBox="0 0 16 16">
                       <path fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0z"/>
                       </svg>
                     </p>
                   </div>
-                  <div>
-                    <p class="hover-text textline">Brunch<svg xmlns="http://www.w3.org/2000/svg" width="55" fill="currentColor" class="bi bi-arrow-down-right" viewBox="0 0 16 16">
+                  <div class="mb-0">
+                    <p class="hover-text textline text-nowrap ">Brunch<svg xmlns="http://www.w3.org/2000/svg" width="55" fill="currentColor" class="bi bi-arrow-down-right" viewBox="0 0 16 16">
                       <path fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0z"/>
                       </svg>
                     </p>
                   </div>
                 </div>
 
-                <div class="mt-5 col-5 px-2 mx-auto border-0 ">
+                <div class="mt-5 col-5 px-2 mx-auto border-0">
                   <div class="home-img overflow-hidden"><img class="img-fluid z-2" src="./assets/images/asset 5.webp" alt="..."></div>
                 </div>
-               <div class="position-relative">
-                <div class="bg-black center-line-div mx-auto mt-0 z-1 pt-0"></div>
-                <div class="bg-black bottom-line-div mx-auto mt-100"></div>
-               </div>
+                <div class="overflow-hidden">
+                  <div class=" center-line-div mx-auto mt-0"><div class="child-center-line-div"></div></div>
+                  <div class="bg-black bottom-line-div mx-auto z-3"></div>
+                </div>
                <div class="the-center-bottom">
                 <p class="mb-80">The Boucherie Cafe</p>
                 <h3 class="mb-35">Our coffee has been keeping the neighborhood awake for over 25 years.</h3>
@@ -218,10 +253,12 @@
           </div>
         </div>
       </section>
-      <!-- start section 3 Quality Services // 3 divs -->
+      <!-- end section 3 Quality Services // 3 divs -->
 
 
-      <section class=" bg-transparent w-100 vh-100 my-5 sec-img-padding"></section>
+      <!-- start section transparent -->
+      <section class=" bg-transparent FirstSectionTransparent w-100   sec-img-padding"></section>
+      <!-- end section transparent -->
 
 
       <!-- start section 4 carousel //some photos -->
@@ -229,9 +266,9 @@
         <div class="container">
           <div class="row">
             <div class="col-12 mx-auto">
-              <div class="position-relative">
-                <div class="bg-black center-line-div mx-auto mt-0"></div>
-                <div class="bg-black bottom-line-div mx-auto mt-100"></div>
+              <div class="overflow-hidden the-top">
+                <div class=" center-line-div mx-auto mt-0"><div class="child-center-line-div"></div></div>
+                <div class="bg-black bottom-line-div mx-auto z-3"></div>
               </div>
               
               <div class="mx-auto text-center mt-4">
@@ -267,19 +304,21 @@
                         </svg></p>
                   </div>
                 </div>
-                
-                <div class="position-relative">
-                  <div class="bg-black center-line-div mx-auto mt-0"></div>
-                  <div class="bg-black bottom-line-div mx-auto mt-100"></div>
+              
+                <div class="overflow-hidden">
+                  <div class=" center-line-div mx-auto align-text-top"><div class="child-center-line-div"></div></div>
+                  <div class="bg-black bottom-line-div mx-auto z-3"></div>
                 </div>
-                  </div>
-                </div>
-                
               </div>
-            
+
             </div>
+                
+          </div>
+            
+        </div>
       </section>
       <!-- end section 4 carousel //some photos -->
+
     
       <!-- start section 5 Timeline //  -->
       <section class="sec-img-padding15 " id="Timeline">
@@ -307,7 +346,9 @@
       <!-- end section 5 Timeline -->
 
 
-      <section class="bg-transparent w-100 vh-100  my-5 sec-img-padding"></section>
+      <!-- start section transparent -->
+      <section class="bg-transparent LastSectionTransparent w-100 sec-img-padding"></section>
+      <!-- end section transparent -->
 
       
       <!-- start section 6 Feedback // just a comment // -->
@@ -317,12 +358,12 @@
             <div class="col-12 mx-auto d-flex ">
               <div class="position-absolute top-0 start-0 end-0 z-2">
                 <div class="position-relative inLast">
-                  <div class="bg-black center-line-div mx-auto mt-0"></div>
+                  <div class=" center-line-div mx-auto mt-0"><div class="child-center-line-div h-100"></div></div>
                   <div class="bg-black bottom-line-div mx-auto mt-0"></div>
                   <p class="text-center mt-3">The Boucherie Cafe</p>
                 </div>
               </div>
-              <div class=" col-6 mt-100 pt-5 px-5 mx-auto ">
+              <div class=" col-6 mt-100 pt-5 px-5 mx-auto">
                 <div class="mt-0 pt-0"><img src="./assets/images/asset 6.webp" alt="..." class="img-fluid "/></div>
               </div>
               <div class=" col-6 mt-auto pb-5 ps-5">
@@ -344,7 +385,7 @@
             </div>
             <div class="col-12">
               <div class="position-relative inLast-footer col-12">
-                <div class="bg-black center-line-div mx-auto mt-0"></div>
+                <div class=" center-line-div mx-auto mt-0"></div>
                 <p class="text-center mt-3">Follow us:</p>
 
                 <div class="mx-auto text-center mt-3">
@@ -362,9 +403,11 @@
           </div>
         </div>
       </section>
-
       <!-- end section 6 Feedback // just a comment -->
+
+
     </main>
+
     
     <!-- start footer // done ////////////////////-->
     <footer>
@@ -386,15 +429,11 @@
 
 
 
-
-
-
-
-
-
+    <!-- start scripts -->
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <!-- end scripts -->
 </body>
 </html>
 <!--                                                             "the end sweety" 

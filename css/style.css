@@ -68,15 +68,27 @@ body ,section{
     padding: 150px 0px 0px ;
 
 }
+.child-center-line-div {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #000;
+    height:52%;
+    width: 1.3px;
+    transition: all 0s ease !important;
+    
+}
 .center-line-div {
+    position: relative;
+    background-color: #F0EDEA;
     margin-top: 4rem;
-    height:179px;
+    height:350px;
     width: 1.3px;
 }
 .bottom-line-div {
-    margin-top: 10rem;
+
     width:60px;
-    height: 1.3px;
+    height: 1.2px;
 }
 /* -------start underline animations */
 /* ------------- that works but it is stu
@@ -142,12 +154,12 @@ body ,section{
     transition: background-size .5s;
 }
 .bgDiv {
-    z-index: -2;
-    background-image: url(../assets/images/asset\ 8.webp) ;
+    z-index: -1;
+    background-image: url(../assets/images/asset8.webp) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
-    width: 100%;
+    /* width: 100%; */
     /* height: 100%; */
     top: 0;
     left: 0;
@@ -174,6 +186,10 @@ body ,section{
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
+}
+.FirstSectionTransparent , .LastSectionTransparent {
+    height: 100vh;
+    margin : 3rem 0 ;
 }
 /* ------------- */
 /* -------end underline animations */
@@ -529,12 +545,47 @@ footer span {
 
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 999px) {
 
+    .headerSpan{
+        display: none;
+    }
+    h1 {
+        font-size: 45px !important;
+        line-height: 45px !important;
+    }
+    #skills h2 {
+        font-size: 28px !important;
+        line-height: 34px !important;
+    }
+    #Quality-Services .spans p {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    #Quality-Services .spans svg {
+        width: 35px;
+    }
+    .center-line-div {
+        height:200px;
+    }
+    .child-center-line-div {
+        height:60%;
+    }
 }
 
 @media screen and (max-width: 768px) {
-
+    h1 {
+        font-size: 32px !important;
+        line-height: 32px !important;
+    }
+    header button.outbtn {
+        font-size: 13px;
+        line-height: 17px;
+        padding: 10px 14px ;
+    }
+    .section-padding {
+        padding: 30px 10px;
+    }
 }
 
 @media screen and (max-width: 570px) {
