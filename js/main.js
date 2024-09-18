@@ -38,13 +38,13 @@ $(document).ready(function(){
     // }
     scrollPositionpercent = (scrollPosition / bodyHeight) * 100;
     scrollPositionpercent = roundToTwoDecimals(scrollPositionpercent);
-    console.log(scrollPositionpercent + "%");
+    // console.log(scrollPositionpercent + "%");
     if (bodyWidth > 1000) {
       fixedLine();
       moveingImages();
       changeImg();
     } else if (bodyWidth < 1000) {
-      fixedLineless();
+      // fixedLineless();
       changeImgWhenResizing();
     }
   }
@@ -141,40 +141,38 @@ $(document).ready(function(){
 
 
   //
-  function fixedLineless() {
-    const scrollTop = $(window).scrollTop(); // حساب التمرير مرة واحدة
-    const sections = [
-      { element: '#skills .center-line-div', target: '#skills .child-center-line-div' },
-      { element: '#Quality-Services .center-line-div', target: '#Quality-Services .child-center-line-div' },
-      { element: '#carouselSec .the-top .center-line-div', target: '#carouselSec .the-top .child-center-line-div' },
-      { element: '#carouselSec .text-center .center-line-div', target: '#carouselSec .text-center .child-center-line-div' }
-    ];
+  // function fixedLineless() {
+  //   const scrollTop = $(window).scrollTop(); // حساب التمرير مرة واحدة
+  //   const sections = [
+  //     { element: '#skills .center-line-div', target: '#skills .child-center-line-div' },
+  //     { element: '#Quality-Services .center-line-div', target: '#Quality-Services .child-center-line-div' },
+  //     { element: '#carouselSec .the-top .center-line-div', target: '#carouselSec .the-top .child-center-line-div' },
+  //     { element: '#carouselSec .text-center .center-line-div', target: '#carouselSec .text-center .child-center-line-div' }
+  //   ];
     
-    const heights = sections.map(section => $(section.element).offset().top); // جلب المسافات من أعلى الصفحة لكل قسم
+  //   const heights = sections.map(section => $(section.element).offset().top); // جلب المسافات من أعلى الصفحة لكل قسم
 
-    // دالة لحساب الـ delta وتطبيق الارتفاع على العنصر المناسب
-    function applyHeight(target, start, scrollTop) {
-      let delta = (scrollTop - start) / 3.5 + 52;
-      delta = Math.min(delta, 100); // تحديد الحد الأقصى للارتفاع ليكون 100%
-      $(target).css('height', `${delta}%`);
-    }
+  //   // دالة لحساب الـ delta وتطبيق الارتفاع على العنصر المناسب
+  //   function applyHeight(target, start, scrollTop) {
+  //     let delta = (scrollTop - start) / 3.5 + 52;
+  //     delta = Math.min(delta, 100); // تحديد الحد الأقصى للارتفاع ليكون 100%
+  //     $(target).css('height', `${delta}%`);
+  //   }
 
-    for (let i = 0; i < sections.length; i++) {
-      if (scrollTop >= heights[i] && (i === sections.length - 1 || scrollTop < heights[i + 1])) {
-        applyHeight(sections[i].target, heights[i], scrollTop);
-        break; // وقف الحلقة بعد العثور على القسم الصحيح
-      }
-    }
-  } 
+  //   for (let i = 0; i < sections.length; i++) {
+  //     if (scrollTop >= heights[i] && (i === sections.length - 1 || scrollTop < heights[i + 1])) {
+  //       applyHeight(sections[i].target, heights[i], scrollTop);
+  //       break; // وقف الحلقة بعد العثور على القسم الصحيح
+  //     }
+  //   }
+  // } 
 
   // start func to change src img when scrolling
   function changeImg() {
     if (scrollPositionpercent < 55 ) {
       $('.bgDiv').css('background-image', 'url(../assets/images/asset8.webp)');
-      console.log('xx')
     } else {
       $('.bgDiv').css('background-image', 'url(../assets/images/asset12.webp)');
-      console.log('xxlllllll')
     }
   } 
   // end func to change src img when scrolling
