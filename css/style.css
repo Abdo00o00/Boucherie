@@ -291,7 +291,7 @@ header .row>* {
 /* -- */
 /* -- */
 /* ----------------------------------------------------start section 2 picture and words and line */
-#skills h5 {
+#skills span.h55 {
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
@@ -313,7 +313,7 @@ header .row>* {
 /* -- */
 /* -- */
 /* ----------------------------------------------------start section 3 Quality Services // 3 divs */
-#Quality-Services .the-center h6 { 
+#Quality-Services .the-center span.h66 { 
     color: rgb(93, 93, 93);
     font-size: 14px;
     font-weight: 400;
